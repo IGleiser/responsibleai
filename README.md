@@ -1,47 +1,44 @@
-# SPECTRE - with great powers comes great responsibility
+# Responsible AI (RAI) Toolkit - with great powers comes great responsibility
 
-## What is SPECTRE
+## What is RAI
 
-SPECTRE is a AI Governance framework.  With increased use of AI / ML in critical decision making process, SPECTRE provides a objective index for measuring the health of the model across the following dimensions
+RAI is a AI Governance framework.  With increased use of AI / ML in critical decision making process, RAI provides a objective index for measuring the risk of the model across the following dimensions:
 
-- Security:  Who can access the Model in production
 - Privacy:  Differential Privacy of data used in model training exercise
-- Explainability:  Ability of the model to explain the prediction
-- Consistency:  Model consistency across multiple test data sets
-- Transparency:  Interpretability of the Model
-- Responsble: Responsibility on Bias and Fairness of the Model
-- Environment friendly:  Carbon Emissions of the Model training / Inference
+- Interpretability:  Ability of the model to explain the prediction
+- Data Bias: Class Imbalance of the data used to train the model
+- Carbon Footprint: Carbon Emissions of the Model training / Inference
 
 ## How does it work
 
 1.  Build the Model using framework of your choice.  
-2.  Use any package to decipher the SPECTRE components.  For eg. Code Carbon for Carbon Emissions, FairTorch for Bias, SageMaker Clarify for Bias, MSFT Interpret ML for Transparency of the Model etc...
+2.  Use any package to decipher RAI components.  For eg. Code Carbon for Carbon Emissions, FairTorch for Bias, SageMaker Clarify for Bias, Captum for Interpretibility of the Model etc...
 4.  Import the SPECTRE package (Python package)
 5.  Add the details of the SPECTRE components of your model to SPECTRE Framework
 6.  SPECTRE calculates an Index (float) that denotes the health of the model.  Higher the number better the model
 
 ## Calculation
 
-Responsible Index is a measure of the following and is a scale between 1 to 3.  3 being a responsible Model
+Responsible AI Index is a measure of the following and is a scale between 1 to 3.  3 being a Responsible Model
 
 1. Carbon Emissions
 2. Differential Privacy
-3. Bias (Imbalance class)
-4. Explainability
+3. Data Bias (Class Imbalance)
+4. Interpretability
 
 ## Support
 
-At the time of this writing, the MVP of the SPECTRE framework supports 
-- Differential Privacy
-- Explainability
-- Responsibility 
-- Environment Friendly (Carbon emissions)
+RAI1.0, the MVP of the RAI framework supports:
 
-You can add a bunch of Models for a specific use case to the SPECTRE framework and SPECTRE ranks them on the basis of its over health or health per dimension
+- Differential Privacy
+- Interpretability
+- Data Bias
+- Carbon Footprint
+
+You can add a bunch of Models for a specific use case to the RAI framework and RAI ranks them on the basis of its Responsible AI Index, which can be adjuted to user flexibility by adjusting it's weights or adding/deleting other open source libabries. 
 
 ![image](https://user-images.githubusercontent.com/7538839/160517464-a716c6d9-bbf3-4255-8710-d090e11abf1a.png)
 
-You can add a bunch of Models for a specific use case to the SPECTRE framework and SPECTRE ranks them on the basis of its over health or health per dimension
 
 ## Pre-requisistes
 
